@@ -12,17 +12,18 @@ import java.util.Date;
 @Table(name="tbl_book")
 @Data
 public class Book {
+    @Column(name="id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
-//    @Column(name="sku")
+    @Column(name="sku")
     private String sku;
 
-//    @Column(name = "name")
+    @Column(name = "name")
     private String name;
 
-//    @Column(name = "description")
+    @Column(name = "description")
     private String description;
 
     @Column(name="unit_price")
